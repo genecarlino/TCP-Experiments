@@ -37,9 +37,6 @@ $ns duplex-link-op $node2 $node3 orient right
 $ns duplex-link-op $node4 $node3 orient left-down
 $ns duplex-link-op $node6 $node3 orient left-up
 
-
-
-
 if {$tcp_option == "Tahoe"} {
         set tcp [new Agent/TCP]
     } else {
