@@ -30,9 +30,6 @@ def average_time(file_name):
         droprate = 0.00
     return (average_time, packet_count, droprate)
 
-
-
-
 def graph_maker(data_type, data, name):
     if data_type == "packets":
         y_axis = [x[1] for x in data]
