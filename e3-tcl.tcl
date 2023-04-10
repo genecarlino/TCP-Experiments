@@ -76,8 +76,19 @@ $ftp set type_ FTP
 
 
 #start time
-$ns at 0.1 "$cbr start"
-$ns at 0.2 "$ftp start"
+#$ns at 0.1 "$cbr start"
+#$ns at 0.2 "$ftp start"
+
+
+#end times 
+#$ns at 10.1 "$cbr stop"
+#$ns at 10.2 "$ftp stop"
+#$ns at 10.3 "$ns halt"
+
+#start time
+$ns at 0.1 "$ftp start"
+$ns at 4.0 "$cbr start"
+
 
 
 #end times 
