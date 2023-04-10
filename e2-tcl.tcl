@@ -57,6 +57,8 @@ if {[llength $argv] != 3} {
 	set sink_n4 [new Agent/TCPSink]
 	$ns attach-agent $node4 $sink_n4
 	$ns connect $tcp_n1 $sink_n4
+	#added below
+	$tcp_n5 set fid_ 1
 	
 	#Setting N5-N6 TCP
 	set tcp_n5 [new Agent/TCP/$tcp_option_2]
@@ -64,6 +66,8 @@ if {[llength $argv] != 3} {
 	set sink_n6 [new Agent/TCPSink]
 	$ns attach-agent $node6 $sink_n6
 	$ns connect $tcp_n5 $sink_n6
+	#added below 
+	$tcp_n5 set fid_ 2
 	
 	#Setting up FTP ftp_option_1 over TCP Connectionode1 tcp_n1
 	set ftp_option_1 [new Application/FTP]

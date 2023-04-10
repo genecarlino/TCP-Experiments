@@ -46,6 +46,7 @@ $ns attach-agent $node5 $udp
 set udpsink [new Agent/Null]
 $ns attach-agent $node6 $udpsink
 $ns connect $udp $udpsink
+
 $udp set fid_ 2
 
 #Setting the CBR over UDP connection
