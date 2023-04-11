@@ -7,3 +7,13 @@ running ns-2 in linux
 
 /course/cs4700f12/ns-allinone-2.35/bin/ns e3-tcl-2.tcl arg arg arg 
 
+
+
+
+
+
+
+
+rsync folder to me
+
+rsync -avz --progress genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/new_e2_data_2/ /Users/genecarlino/Desktop/recieve/e2_data_v2_FINAL
