@@ -2,6 +2,7 @@ rsync to send 2 files to bin:
 
 rsync -avz --progress /Users/genecarlino/Desktop/sending/e2-tcl-2.tcl /Users/genecarlino/Desktop/sending/e3-tcl-2.tcl genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/
 
+rsync -avz --progress /Users/genecarlino/Desktop/sending/e2-tcl-3.tcl genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/
 running ns-2 in linux
 
 /course/cs4700f12/ns-allinone-2.35/bin/ns e3-tcl-2.tcl arg arg arg 
