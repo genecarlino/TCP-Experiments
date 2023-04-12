@@ -17,3 +17,9 @@ running ns-2 in linux
 rsync folder to me
 
 rsync -avz --progress genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/new_e2_data_2/ /Users/genecarlino/Desktop/recieve/e2_data_v2_FINAL
+
+
+mkdir /home/genecarlino/Desktop/bin/new_directory
+
+find /home/genecarlino/Desktop/bin/ -type f -iname "*.tcl" -print0 | xargs -0 -I {} mv {} /home/genecarlino/Desktop/bin/new_directory/
+
