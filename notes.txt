@@ -7,6 +7,8 @@ running ns-2 in linux
 
 /course/cs4700f12/ns-allinone-2.35/bin/ns e3-tcl-2.tcl arg arg arg 
 
+/course/cs4700f12/ns-allinone-2.35/bin/ns e3-tcl-id.tcl Reno RED 1 
+
 
 
 
@@ -16,10 +18,22 @@ running ns-2 in linux
 
 rsync folder to me
 
-rsync -avz --progress genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/new_e2_data_2/ /Users/genecarlino/Desktop/recieve/e2_data_v2_FINAL
+rsync -avz --progress genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/e3_data_2/ /Users/genecarlino/Desktop/recieve/e3_data_3
 
 
-mkdir /home/genecarlino/Desktop/bin/new_directory
+mkdir /home/genecarlino/Desktop/bin/e3_data_2
 
-find /home/genecarlino/Desktop/bin/ -type f -iname "*.tcl" -print0 | xargs -0 -I {} mv {} /home/genecarlino/Desktop/bin/new_directory/
+find /home/genecarlino/Desktop/bin/ -type f -iname "*.tr" -print0 | xargs -0 -I {} mv {} /home/genecarlino/Desktop/bin/e3_data_3/
 
+
+remove all TR file
+find /home/genecarlino/Desktop/bin -type f -name "*.tr" -exec rm {} \;
+
+
+
+rsync -avz --progress genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/special-delivery/ /Users/genecarlino/Desktop/recieve/
+rsync -avz --progress /Users/genecarlino/Desktop/sending/e3-tcl-id.tcl /Users/genecarlino/Desktop/sending/e3-tcl-2.tcl genecarlino@login.khoury.northeastern.edu:/home/genecarlino/Desktop/bin/
+
+
+
+find /home/genecarlino/Desktop/bin/ -type f -iname "*.tr" -print0 | xargs -0 -I {} mv {} /home/genecarlino/Desktop/bin/special-delivery/
