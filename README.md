@@ -6,19 +6,19 @@ Repository Structure
 
 The repository consists of the following:
 
-    Source Code: This includes the network simulation scripts used for the experiments. The simulations are conducted using Network Simulator 2 (NS-2), a popular network simulation software.
+   Source Code: This includes the network simulation scripts used for the experiments. The simulations are conducted using Network Simulator 2 (NS-2), a popular network simulation software.
 
-    Data Analysis Scripts: Python scripts to parse and analyze the simulation data. The scripts use the Matplotlib library to generate insightful plots illustrating the performance of TCP variants and queuing algorithms under different conditions.
+   Data Analysis Scripts: Python scripts to parse and analyze the simulation data. The scripts use the Matplotlib library to generate insightful plots illustrating the performance of TCP variants and queuing algorithms under different conditions.
 
-    Research Paper: A comprehensive research paper detailing the design of the experiments, the methodology followed, the results obtained, and the analysis of these results.
+   Research Paper: A comprehensive research paper detailing the design of the experiments, the methodology followed, the results obtained, and the analysis of these results.
 
 Key Findings
 
-    TCP Vegas displayed superior performance in terms of throughput and latency under various load conditions.
+   1.TCP Vegas displayed superior performance in terms of throughput and latency under various load conditions.
 
-    In terms of fairness, the same-protocol combinations (Reno-Reno, Vegas-Vegas) showed a high degree of fairness, while combinations of different protocols (e.g., Vegas-NewReno) demonstrated considerable unfairness due to their distinct congestion control mechanisms.
+   2.In terms of fairness, the same-protocol combinations (Reno-Reno, Vegas-Vegas) showed a high degree of fairness, while combinations of different protocols (e.g., Vegas-NewReno) demonstrated considerable unfairness due to their distinct congestion control mechanisms.
 
-    The influence of queueing algorithms on network performance was considerable, with RED and DropTail showing differing performance under various conditions. The choice between RED and DropTail, and their combination with SACK, depends on the specific network requirements.
+   3.The influence of queueing algorithms on network performance was considerable, with RED and DropTail showing differing performance under various conditions. The choice between RED and DropTail, and their combination with SACK, depends on the specific network requirements.
 
 Usage
 
